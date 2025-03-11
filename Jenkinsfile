@@ -26,7 +26,7 @@ pipeline {
         }
         stage ('into nexus') {
             steps {
-                sh 'mvn -s settings.xml clean depoly'
+                sh 'mvn -s settings.xml clean deploy'
             }
             post {
                 success {
